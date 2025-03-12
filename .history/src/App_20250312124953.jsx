@@ -5,8 +5,6 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import DHIS2Iframe from './components/Dataentry';
 import  VisualsOne  from './components/VisualsOne'
-import TrackerIframe from './components/Tracker';
-import EventIframe from './components/Event';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -51,20 +49,17 @@ export default function BasicTabs() {
           <Tab label="Aggregate Data Entry" {...a11yProps(0)} />
           <Tab label="Tracker Capture" {...a11yProps(1)} />
           <Tab label="Event Capture" {...a11yProps(1)} />
-          <Tab label="Reports" {...a11yProps(3)} />
+          <Tab label="Reports" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
         <DHIS2Iframe />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <TrackerIframe />
+        <VisualsOne />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <EventIframe />
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={3}>
-        <VisualsOne />
+        Item Three
       </CustomTabPanel>
     </Box>
   );

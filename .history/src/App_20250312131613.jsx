@@ -5,8 +5,6 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import DHIS2Iframe from './components/Dataentry';
 import  VisualsOne  from './components/VisualsOne'
-import TrackerIframe from './components/Tracker';
-import EventIframe from './components/Event';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -58,10 +56,10 @@ export default function BasicTabs() {
         <DHIS2Iframe />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <TrackerIframe />
+        Item ..
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <EventIframe />
+        Item ...
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
         <VisualsOne />
