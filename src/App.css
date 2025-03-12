@@ -1,0 +1,58 @@
+/* src/App.css */
+.app {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .dropdowns {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dropdown {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .calendar-inputs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .calendar-inputs input {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .period-info {
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
